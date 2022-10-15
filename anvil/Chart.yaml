@@ -34,3 +34,10 @@ sources:
 maintainers:
 - name: Min Ju
   email: min@example.com
+
+dependencies:
+- name: booster
+  # When you want to control if a single feature is enabled or disabled through a dependency, you can use the condition property on a dependency
+  condition: booster.enabled
+  version: ^1.0.0
+  repository: https://raw.githubusercontent.com/Masterminds/learning-helm/main/chapter6/repository/

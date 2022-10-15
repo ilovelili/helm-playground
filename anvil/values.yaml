@@ -80,3 +80,9 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+# this section is for the booster chart, which is the helm dependency we define in Chart.yaml
+booster:
+  enabled: true
+  image:
+    tag: 9.17.49
